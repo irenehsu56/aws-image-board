@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>圖文留言板</title>
+</head>
+<body>
+    <main class="container">
+
+        <header class="page-header">
+            <h1>圖文留言板</h1>
+            <p>歡迎和大家分享你的文字與圖片！</p>
+        </header>
+
+        <section class="post-form-card">
+            <h2>發表一篇圖文</h2>
+
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="content">文字內容</label>
+                    <textarea 
+                        id="content" 
+                        name="content" 
+                        rows="5" placeholder="寫下想分享的內容..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group image-group">
+                    <label for="image">選擇圖片</label>
+                    <input
+                        type="file" 
+                        id="image" 
+                        name="image" 
+                        accept="image/*"
+                    >
+                </div>
+
+                <button type="submit">發布</button>
+            </form>
+        </section>
+
+        <section class="post-section">
+            <h2>最新圖文</h2>
+
+            <div id="post-list"></div>
+        </section>
+    </main>
+
+    <script src="/static/index.js"></script>
+</body>
+</html>

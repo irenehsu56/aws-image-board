@@ -1,0 +1,126 @@
+/* 基本設定 */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans TC", sans-serif;
+    background-color: #f3f5f7;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* 標題 */
+.page-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.page-header h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 36px;
+}
+.page-header p {
+    margin: 0;
+    text-align: center;
+    color: #777;
+}
+
+/* 發文區塊 */
+.post-form-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+.post-form-card h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* 表單 */
+.form-group {
+    margin-bottom: 22px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+}
+.image-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.image-group label {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.image-group input[type="file"] {
+    width: auto;
+}
+input[type="file"] {
+    width: 100%;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3f5f7f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #304b66;
+}
+
+/* 留言列表 */
+.post-section {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.post-section h2 {
+    margin-bottom: 20px;
+}
+#post-list > div {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+#post-list p {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+#post-list img {
+    display: block;
+    width: 60%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+#post-list hr {
+    display: none;
+}
